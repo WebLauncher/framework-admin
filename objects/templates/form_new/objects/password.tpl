@@ -1,0 +1,1 @@
+<input type="password" name="{$field.name}" id="field_id_{$field.name}" value="{if isset($p.state[$field.name])}{$p.state[$field.name]}{else}{$field.value}{/if}"  class="text"/>

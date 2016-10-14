@@ -1,0 +1,1 @@
+<textarea id="field_id_{$field.name}" name="{$field.name}" class="textarea"  {if $field.cols}cols="{$field.cols}"{/if} {if $field.rows}rows="{$field.rows}"{/if}>{$p.state[$field.name]|default:$field.value}</textarea>

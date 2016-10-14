@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<item>
+		<order>1</order>
+		<label>home</label>
+		<name>Home</name>
+		<description></description>
+		<icon>icon-home</icon>
+		<link>home/</link>
+	</item>
+	<item>
+		<label>articles</label>
+		<name>Content</name>
+		<description>Din aceasta sectiune se poate modifica continul paginilor statice.</description>
+		<order>2</order>
+		<link>articles</link>
+		<submenu>
+			<item>
+				<name>Pagini pricipale</name>
+				<icon>icon-desktop</icon>
+				<description>Din aceasta sectiune se poate modifica continul paginilor principale ce nu pot fi sterse.</description>
+				<link>articles/main</link>
+			</item>
+			<item>
+				<name>Evenimente</name>
+				<icon>icon-calendar</icon>
+				<description>Din aceasta sectiune se poate modifica sau adauga continul articolelor evenimente.</description>
+				<link>articles/events</link>
+			</item>
+			<item>
+				<name>Pagini noi</name>
+				<icon>icon-laptop</icon>
+				<description>Din aceasta sectiune se poate adauga sau mofica paginile noi necesare pe site.</description>
+				<link>articles/newpage</link>
+			</item>
+		</submenu>
+		<icon>icon-desktop</icon>
+	</item>	
+	<item>
+		<label>newsleter</label>
+		<name>Scrisori e-mail</name>
+		<description>
+			<![CDATA[Din aceasta sectiune se poate:
+			<br/>
+			<ul>
+				<li>adauga, edita, sterge sau dezabona adrese de e-mail</li>
+				<li>adauga, sterge sau edita tipuri-le de adrese de e-mail</li>
+				<li>trimite scrisori la adresele de e-mail inscrise</li>
+				<li>verifica statusul trimiterilor</li>
+			</ul>]]>
+		</description>
+		<order>3</order>
+		<link>newsleter</link>
+		<icon>icon-newspaper-o</icon>
+		<submenu>
+			<item>
+				<name>Email-uri inregistrate</name>
+				<icon>icon-envelope</icon>
+				<description>Din aceasta sectiune se pot adauga, modifica, sterge sau dezabona adrese de e-mail de la scrisori.</description>
+				<link>newsleter/emails</link>
+			</item>
+			<item>
+				<name>Tipuri adrese email</name>
+				<icon>icon-envelope</icon>
+				<description>Din aceasta sectiune se pot adauga, modifica sau sterge tipurile de adrese de e-mail.</description>
+				<link>newsleter/emails_types</link>
+			</item>
+			<item>
+				<name>Scrisori salvate</name>
+				<icon>icon-envelope</icon>
+				<description>Din aceasta sectiune se pot adauga, modifica, sterge si trimite scrisori catre adresele de e-mail salvate.</description>
+				<link>newsleter/newsleters</link>
+			</item>
+			<item>
+				<name>Trimiteri scrisori</name>
+				<icon>icon-envelope</icon>
+				<description>Din aceasta sectiune se pot modifica, sterge si verifica trimiterile de scrisori.</description>
+				<link>newsleter/newsleters_jobs</link>
+			</item>
+		</submenu>
+	</item>
+	<item>
+
+		<label>files</label>
+		<name>Publicitate</name>
+		<description>
+			<![CDATA[Din aceasta sectiune se poate:
+			<br/>
+			<ul>
+				<li>adauga, edita sau sterge tipuri de banere publicitare</li>
+				<li>adauga, sterge sau edita banere la fiecare tip</li>
+			</ul>]]>			
+		</description>
+		<order>4</order>
+		<link>advertising</link>
+		<icon>icon icon-picture-o</icon>
+		<submenu>
+			<item>
+				<name>Adauga baner</name>
+				<icon>icon-plus</icon>
+				<description>Adaugare rapida de baner.</description>
+				<link>publicitate/banners/?a=add</link>
+			</item>
+			<item>
+				<name>Zone banere</name>
+				<icon>icon-object-group</icon>
+				<description>Din aceasta sectiune se pot adauga, modifica sau sterge zonele de banere precum si banerele publicitare continute.</description>
+				<link>publicitate/banners</link>
+			</item>
+		</submenu>
+	</item>
+	<item>
+		<label>texte</label>
+		<name>Continut text</name>
+		<order>11</order>
+		<link>texte</link>
+		<icon>icon-font</icon>
+		<description>Din aceasta sectiune se face editarea continutului text de pe site.</description>
+		<submenu>
+			<item>
+				<name>Lista texte</name>
+				<icon>icon-list</icon>
+				<description>Din aceasta sectiune se face editarea si traducerea textelor.</description>
+				<link>texte/texts</link>
+			</item>
+			<item>
+				<name>Traducere Pas cu Pas</name>
+				<icon>icon-forward</icon>
+				<description>Din aceasta sectiune traducerea pas cu pas a continutului text.</description>
+				<link>texte/steps</link>
+			</item>
+		</submenu>
+	</item>
+	<item>
+		<label>configuratii</label>
+		<order>10</order>
+		<name>Configuratii</name>
+		<description>Din aceasta sectiune se poate configura site-ul.</description>
+		<link>configurations</link>
+		<icon>icon-cog</icon>
+		<submenu>
+			<item>
+				<name>Configuratii generale</name>
+				<link>configurations/general/</link>
+				<description>Din acesta sectiune se pot modifica configuratiile generale ale site-ului.</description>
+				<icon>icon-cogs</icon>
+				<submenu>
+					<item>
+						<name>Setari</name>
+						<link>configurations/general/settings</link>
+						<description>Din aceasta sectiune se poate modifica setarile generale ale site-ului.</description>
+						<icon>icon-wrench</icon>
+					</item>
+					<item>
+						<name>Limbi straine</name>
+						<link>configurations/general/languages</link>
+						<description>Din aceasta sectiune se pot modifica si activa limbile straine disponibile pentru traduceri.</description>
+						<icon>icon-keyboard-o</icon>
+					</item>
+					<item>
+						<name>Locations</name>
+						<permissions>admin_management</permissions>
+						<link>configurations/general/locations</link>
+						<description>Din aceasta sectiune se pot modifica si adauga judete.</description>
+						<icon>icon-globe</icon>
+					</item>
+					<item>
+						<name>Template-uri email</name>
+						<link>configurations/general/templates</link>
+						<description>Din aceasta sectiune se pot modifica si adauga template-uri pentru email-urile trimise automat de pe site.</description>
+						<icon>icon-envelope-o</icon>
+					</item>
+				</submenu>
+			</item>
+			<item>
+				<name>Setari SEO pagini</name>
+				<permissions>admin_management</permissions>
+				<link>configurations/seo/</link>
+				<description>Din aceasta sectiune se poate modifica setarile SEO ale site-ului.</description>
+				<icon>icon-search</icon>
+				<submenu>
+					<item>
+						<name>Meta tag-uri generale</name>
+						<permissions>admin_management</permissions>
+						<link>configurations/seo/metas</link>
+						<description>Din aceasta sectiune se pot modifica, adauga si activa meta tag-urile generale pentru site.</description>
+						<icon>icon-tag</icon>
+					</item>
+					<item>
+						<name>Setari SEO particulare</name>
+						<permissions>admin_management</permissions>
+						<link>configurations/seo/pages</link>
+						<description>Din aceasta sectiune se pot modifica, adauga si activa setari SEO particulare pe pagini.</description>
+						<icon>icon-link</icon>
+					</item>
+				</submenu>
+			</item>
+		</submenu>
+	</item>
+	<item>
+		<label>cont</label>
+		<order>15</order>
+		<name>Administrare</name>
+		<link>account</link>
+		<icon>icon-user</icon>
+		<description>Configurare administrare website.</description>
+		<submenu>
+			<item>
+				<name>Contul meu</name>
+				<link>account/profiles/?a=edit:{$p.user.id}</link>
+				<icon>icon-user</icon>
+				<description>Din aceasta sectiune se pot edita detalii contului personal de administrator.</description>
+			</item>
+			<item>
+				<name>Adauga administrator</name>
+				<permissions>admin_management</permissions>
+				<link>account/lista?a=add</link>
+				<icon>icon-plus</icon>
+				<master>1</master>
+				<description>Din aceasta sectiune se poate adauga un cont de administrator.</description>
+			</item>
+			<item>
+				<name>Lista administratori</name>
+				<permissions>admin_management</permissions>
+				<link>account/profiles</link>
+				<master>1</master>
+				<icon>icon-group</icon>
+				<description>Din aceasta sectiune se pot adauga, edita sau sterge conturi de administratori.</description>
+			</item>
+			<item>
+				<name>Administrators types</name>
+				<permissions>admin_management</permissions>
+				<link>account/types</link>
+				<master>1</master>
+				<icon>icon-hand-o-right</icon>
+				<description>From this section you can edit/add user types for accesing administration.</description>
+			</item>
+			<item>
+				<name>Configuratii</name>
+				<permissions>admin_management</permissions>
+				<link>account/config/</link>
+				<master>1</master>
+				<description>Din aceasta sectiune se poate configura aplicatia de administrare.</description>
+				<icon>icon-cogs</icon>
+				<submenu>
+					<item>
+						<name>Setari</name>
+						<permissions>admin_management</permissions>
+						<link>account/config/settings</link>
+						<description>Din aceasta sectiune se poate modifica setarile aplicatiei de administrare.</description>
+						<icon>icon-wrench</icon>
+					</item>
+					<item>
+						<name>Continut text</name>
+						<permissions>admin_management</permissions>
+						<link>account/config/texts</link>
+						<description>Din aceasta sectiune se poate modifica sau traduce continutul text al aplicatiei de administrare.</description>
+						<icon>icon-file-text</icon>
+					</item>
+					<item>
+						<name>Traducere pas cu pas</name>
+						<permissions>admin_management</permissions>
+						<link>account/config/steps</link>
+						<description>Din aceasta sectiune traducerea pas cu pas a continutului text.</description>
+						<icon>icon-retweet</icon>
+					</item>
+				</submenu>
+			</item>
+		</submenu>
+	</item>
+</menu>

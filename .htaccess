@@ -1,0 +1,27 @@
+# Push all requests to index.php
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]    
+</IfModule>
+
+# Use deflate if available
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml application/javascript text/javascript application/x-javascript text/css application/xml image/x-icon
+    Header append Vary User-Agent
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+
+# Push a future expire header if not pushed
+<IfModule mod_expires.c>
+	<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+		Header set Expires "Thu, 1 Jan 2018 20:00:00 GMT"
+	</FilesMatch>
+</IfModule>
+
+# Unset ETag
+Header unset ETag
+FileETag None

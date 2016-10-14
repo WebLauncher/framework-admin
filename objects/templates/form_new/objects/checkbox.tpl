@@ -1,0 +1,1 @@
+<input type="checkbox" name="{$field.name}" id="field_id_{$field.name}" {if $p.state[$field.name] || $field.checked}checked="checked"{/if} value="{if $p.state[$field.name]}{$p.state[$field.name]}{else}{$field.value}{/if}"/>

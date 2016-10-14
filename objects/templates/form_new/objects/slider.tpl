@@ -1,0 +1,2 @@
+					<div class="slider" style="width:98%;" id="field_id_{$field.name}_div" {if $field.min} min="{$field.min}"{/if}{if $field.max} max="{$field.max}"{/if}{if $field.step} step="{$field.step}"{/if}{if $p.state[$field.name]} value="{$p.state[$field.name]}"{else}{if $field.value} value="{$field.value}"{/if}{/if}></div>
+					<input type="text" value="{if $p.state[$field.name]}{$p.state[$field.name]}{else}{$field.value}{/if}" readonly="readonly" name="{$field.name}" id="field_id_{$field.name}" class="text" style="width:30px;"/>

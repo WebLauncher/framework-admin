@@ -1,0 +1,1 @@
+<input type="file" name="{$field.name}" id="field_id_{$field.name}" class="text" value="{if isset_or($p.state[$field.name])}{$p.state[$field.name]}{/if}"/>
